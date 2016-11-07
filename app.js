@@ -4,11 +4,11 @@ var yellowCount = 0;
 var greenCount = 0;
 var blueCount = 0;
 
-var color; //declaring global color variable so it is available to both functions
+//declaring global color variable so it is available to both functions
+var color;
 
 $( document ).ready(function() {
-
-  //listeners for color-button
+//listeners for color-button
   $(".color-button").on("click", addToDom);
   $(".color-button").on("click", addTotalColor);
 });
@@ -16,10 +16,8 @@ $( document ).ready(function() {
 
 //function to add colored div to the DOM
 function addToDom() {
-
-  //redefining color variable
+//redefining color variable
   color = $(this).data("color");
- 
   $(".container").append("<div class='color-cube " + color + "'></div>");
 }
 
