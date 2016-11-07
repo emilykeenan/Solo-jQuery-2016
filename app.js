@@ -3,6 +3,7 @@ var redCount = 0;
 var yellowCount = 0;
 var greenCount = 0;
 var blueCount = 0;
+var magentaCount = 0;
 
 //declaring global color variable so it is available to both functions
 var color;
@@ -40,6 +41,10 @@ function addTotalColor() {
     case "blue":
       blueCount++;
       $("#" + color).text("Total " + color + ": " + blueCount);
+      break;
+    case "magenta":
+      magentaCount++;
+      $("#" + color).text("Total " + color + ": " + magentaCount);
       break;
   }
 }
