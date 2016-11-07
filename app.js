@@ -16,8 +16,10 @@ $( document ).ready(function() {
 
 //function to add colored div to the DOM
 function addToDom() {
-  //declaring color variable
+
+  //redefining color variable
   color = $(this).data("color");
+ 
   $(".container").append("<div class='color-cube " + color + "'></div>");
 }
 
