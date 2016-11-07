@@ -8,7 +8,7 @@ var color; //declaring global color variable so it is available to both function
 
 $( document ).ready(function() {
 
-  //click listeners for color-button
+  //listeners for color-button
   $(".color-button").on("click", addToDom);
   $(".color-button").on("click", addTotalColor);
 });
